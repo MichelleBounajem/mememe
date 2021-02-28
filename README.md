@@ -132,6 +132,6 @@
 	
 	<#dcffe4, $bg-green-light>
 
-	
+	#2432BE <html> <body> <body bgcolor = **#2432BE** > <h1 align="center">
 	
 </html>
