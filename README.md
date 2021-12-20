@@ -1,103 +1,239 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+	/*
+	border: 1px solid blue;
+	*/
 }
-a{
-    text-decoration: none;
+
+html {
+	width: 990px; 
+	margin: auto;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; 
+	overflow: scroll;
+	line-height: 1.5;
 }
-.hero{
-    width: 100%;
-    height: 100vh;
-    background: url(img/bg1.jpg);
-    background-size: cover;
+
+body {
 }
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 100px;
+
+/* Navigation bar handles */
+
+#navbar {
+	display: auto;
+	background-color: #edeeef;
+	border-radius: 5px;
+	padding: 0px;
+	margin-bottom: 20px;
 }
-.logo{
-    max-height: 60px;
+
+#navbar ul {
+	display: inline-flex;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
 }
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 10px 20px;
+
+#navbar li {
+	border-radius: 5px;
+	width: 135px;
+	padding: 10px 1px 10px 1.2px; 
+	display: inline;
+	margin-right: 1px;
+	margin-left: 1px;
+	float: left;
 }
-nav ul li a{
-    color: #1d1d24;
-    position: relative;
-    padding: 5px 0;
+
+#navbar a {
+	margin: 0px auto 0px auto;
+	width: 100%;
+	color: black;
+	font-size: 1.3em;
+	text-decoration: none;
 }
-nav ul li a:hover{
-    color: #fd4766;
+
+#navbar li:hover {
+	background-color: #caccce;
 }
-nav ul li a:after{
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background: #fd4766;
-    transition: .3s;
-    bottom: 0;
+
+.active {
+	background-color: #caccce;
 }
-nav ul li a:hover:after{
-    width: 100%;
+
+li>a {
+	font-size: 1.3em;
+	margin: 0px 15px 0px 15px;
+	padding: 0px 0px 0px 0px;
+	float: left;
+	text-align: center;
+	
 }
-.btn{
-    color: #fff;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 16px 40px;
-    border-radius: 500px;
-    display: inline-block;
-    font-weight: 500;
-    transition: all .4s ease-in-out;
-    background-size: 152% 100%;
-    background: #fd4766;
-    border: 2px solid #fd4766;
+
+.pics {
+	width: 100%;
+	float: left;
 }
-.btn:hover{
-    background: transparent;
-    border-color: #fd4766;
-    color: #fd4766;
+
+#bio-bottom {
+	clear: both;
+	margin-top: 10px;
 }
-.content{
-    position: absolute;
-    top: 35%;
-    left: 8%;
+
+
+/*-------------------*/
+/*Biography section handles*/
+
+.bio {
+	padding: 15px;
+	background-color:#eee;
+	border-radius: 5px;
+	width: 100%;
+	height: auto;
+	display: inline-flex;
 }
-.content .title{
-    color: #1f1f25;
-    font-size: 15px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    display: inline-block;
-    margin-bottom: 20px;
-    background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%,#fd4766 79.69%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
+#bio-left {
+	margin: 20px 10px 10px 10px;
+	width: 35%;
+	float: left;
 }
-.content h1{
-    color: #1f1f25;
-    font-size: 75px;
-    font-weight: 900;
-    line-height: 90px;
-    text-transform: inherit;
-    width: 70%;
+
+#bio-right {
+	margin: -10px 10px 0px 0px;
+	width: 60%;
+	float: right;
 }
-.content h1 span{
-    color: #fd4766;
+
+#myname {
+	clear: both; 
+	font-size: 1.6em;
+	margin: 0px 0px -10px 0px;
+	padding: 10px 0px 0px 0px;
+	text-align: center;
 }
-.content p{
-    width: 55%;
-    color: #757575;
-    margin-top: 25px;
-    margin-bottom: 30px;
+
+#position {
+	font-size: 1.0em;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif
+	margin: 0px; 
+	padding: 0px 0px 0px 10px; 
+	text-align: center;
+}
+
+#university {
+	margin: -20px 0px 0px 0px;
+	padding: 0px 0px 0px 10px; 
+	font-size: 1.0em;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; 
+	text-align: center;
+}
+
+#myname {
+
+}
+
+#table-links {
+	width: 100%;
+	text-align: center;
+	margin-top: -10px;
+	margin-bottom: 10px;
+}
+
+.bio-links {
+	text-decoration: none; 
+	color: #1529c4;
+	text-align: center; 
+}
+
+/*-----------------*/
+/*Main contents handles*/
+
+.text-link {
+	color: blue;
+	text-decoration: none; 
+}
+
+.bio-main {
+	background-color: #f2f2f2;
+	border-radius: 15px;
+	font-size: 1.1em;
+}
+
+.topic {
+	padding-top: 0px;
+}
+
+
+.home-contents {
+	background-color: #f2f2f2;
+	border-radius: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 2px 20px 2px 20px;
+}
+
+
+.bio-body {
+	font-size: 1.2em;
+	padding: 10px ;
+}
+
+
+
+.body_section {
+	display: auto;
+	clear: both;
+	flex-direction: column; 
+}
+
+ol>li {
+	padding: 10px;
+	font-size: 1.1em;
+}
+
+
+.edu-row {
+	padding: 10px 0px 10px 0px;
+}
+
+.edu-degree {
+	padding: 10px;
+	list-style-type: none;
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+
+.edu-details {
+	padding: 5px;
+	font-size: 0.9em;
+}
+
+.contact {
+	text-align: center;
+}
+
+
+#copyright{
+	padding: 10px 10px 10px 10px;
+	text-align: right; 
+	font-size: 1.2em;
+	background-color: white;
+	margin: -5px -20px -5px -20px;
+}
+
+/* Research tab */
+
+.research-table {
+	width: 100%;
+}
+
+.research-left {
+	width: 40%;
+}
+
+.research-right {
+	width: 60%;
+}
+
+.indented {
+	padding-left: 30pt; 
+	padding-right: 30pt;
 }
